@@ -21,7 +21,7 @@ namespace ProyectoFinal.App_code
         /// <returns>Cadena de conexión para ClinicaVeterinariaDB.</returns>
         private string GetConnectionString()
         {
-            return ConfigurationManager.ConnectionStrings["Vetsos"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["ProyectoFinal"].ConnectionString;
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace ProyectoFinal.App_code
         /// </summary> 
         public void LogError(Exception ex)
         {
-            string logFilePath = @"C:\Error_VetSOS\database_errors.log";// Ubicación y nombre del archivo de log
+            string logFilePath = @"C:\WebP\errorProyectoFinal.txt";// Ubicación y nombre del archivo de log
 
             using (StreamWriter writer = new StreamWriter(logFilePath, true)) // 'true' para agregar al final del archivo
             {
