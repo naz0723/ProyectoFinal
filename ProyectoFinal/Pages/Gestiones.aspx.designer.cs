@@ -123,6 +123,15 @@ namespace ProyectoFinal.Pages
         protected global::System.Web.UI.WebControls.GridView gvEmpleados;
 
         /// <summary>
+        /// btnDescargarPDFGestiones control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDescargarPDFGestiones;
+
+        /// <summary>
         /// gvGestiones control.
         /// </summary>
         /// <remarks>

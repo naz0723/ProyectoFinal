@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Empleados</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
 <body>
 
@@ -95,6 +97,7 @@
         </fieldset>
 
      
+        <asp:Button ID="btnDescargarPDFEmpleados" runat="server" Text="Descargar Empleados en PDF" OnClick="btnDescargarPDFEmpleados_Click" />
 
         <!-- Listado de Empleados -->
         <h3>Listado de Empleados</h3>

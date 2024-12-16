@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Ausencias</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
 <body>
 
@@ -69,6 +71,8 @@
 
         <h3>Listado de Empleados</h3>
         <asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
+
+<asp:Button ID="btnDescargarPDFAusencias" runat="server" Text="Descargar Ausencias en PDF" OnClick="btnDescargarPDFAusencias_Click" />
 
         <!-- Listado de Ausencias -->
         <h3>Listado de Ausencias</h3>

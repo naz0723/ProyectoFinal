@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Evaluaciones</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
 <body>
 
@@ -68,6 +70,9 @@
 
         <h3>Listado de Empleados</h3>
 <asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
+
+        <asp:Button ID="btnDescargarPDFEvaluaciones" runat="server" Text="Descargar Evaluaciones en PDF" OnClick="btnDescargarPDFEvaluaciones_Click" />
+
 
         <!-- Listado de Evaluaciones -->
         <h3>Listado de Evaluaciones</h3>

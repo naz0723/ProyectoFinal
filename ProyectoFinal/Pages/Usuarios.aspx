@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
 <body>
 

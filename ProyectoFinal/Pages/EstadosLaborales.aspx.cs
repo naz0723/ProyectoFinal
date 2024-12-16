@@ -1,6 +1,11 @@
-﻿using System;
+﻿using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
+using System.Web.UI.WebControls;
 
 namespace ProyectoFinal.Pages
 {
@@ -125,5 +130,42 @@ namespace ProyectoFinal.Pages
                 CargarEstadosLaborales();
             }
         }
+
+        protected void btnDescargarPDFEstadosLaborales_Click(object sender, EventArgs e)
+        {
+            string folderPath = Server.MapPath("~/Reportes");
+
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            string filePath = Path.Combine(folderPath, "EstadosLaborales.pdf");
+
+            using (var writer = new PdfWriter(filePath))
+            {
+                using (var pdf = new PdfDocument(writer))
+                {
+                    var document = new Document(pdf);
+                    document.Add(new Paragraph("Reporte de Estados Laborales"));
+
+                    foreach (GridViewRow row in gvEstadosLaborales.Rows)
+                    {
+                        document.Add(new Paragraph($"ID Empleado: {row.Cells[0].Text}"));
+                        document.Add(new Paragraph($"Estado: {row.Cells[1].Text}"));
+                        document.Add(new Paragraph($"Fecha Inicio: {row.Cells[2].Text}"));
+                        document.Add(new Paragraph($"Fecha Fin: {row.Cells[3].Text}"));
+                        document.Add(new Paragraph("----------"));
+                    }
+                }
+            }
+
+            // Descarga el archivo PDF
+            Response.ContentType = "application/pdf";
+            Response.AppendHeader("Content-Disposition", "attachment; filename=EstadosLaborales.pdf");
+            Response.TransmitFile(filePath);
+            Response.End();
+        }
+
     }
 }

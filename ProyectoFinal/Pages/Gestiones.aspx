@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Vacaciones, Permisos y Licencias</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
 
     <body>
@@ -73,6 +75,9 @@
 
                 <h3>Listado de Empleados</h3>
 <asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
+
+        <asp:Button ID="btnDescargarPDFGestiones" runat="server" Text="Descargar Gestiones en PDF" OnClick="btnDescargarPDFGestiones_Click" />
+
 
         <!-- Listado de Gestiones -->
         <h3>Listado de Gestiones</h3>

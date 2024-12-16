@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Estados Laborales</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
 <body>
 
@@ -70,6 +72,9 @@
 
          <h3>Listado de Empleados</h3>
  <asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
+
+        <asp:Button ID="btnDescargarPDFEstadosLaborales" runat="server" Text="Descargar Estados Laborales en PDF" OnClick="btnDescargarPDFEstadosLaborales_Click" />
+
 
         <!-- Listado de Estados Laborales -->
         <h3>Listado de Estados Laborales</h3>

@@ -4,7 +4,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Gestión de Asistencias</title>
+    <link rel="stylesheet" type="text/css" href="Styles/styles.css" />
+
 </head>
+
 <body>
 
     <body>
@@ -71,8 +74,19 @@
             <asp:Button ID="btnEliminar" Text="Eliminar" OnClick="btnEliminar_Click" runat="server" />
         </fieldset>
 
+         <!-- Listado de Empleados -->
+ <h3>Listado de Empleados</h3>
+
+ <asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
+
         <!-- Listado de Asistencias -->
+
+
         <h3>Listado de Asistencias</h3>
+
+                        <asp:Button ID="Button2" runat="server" Text="Descargar Asistencias en PDF" OnClick="btnDescargarPDFAsistencias_Click" />
+
+
         <asp:GridView ID="gvAsistencias" AutoGenerateColumns="true" runat="server" />
     </form>
 </body>
