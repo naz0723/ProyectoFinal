@@ -15,7 +15,6 @@
            <div class="submenu">
     <a href="Empleado.aspx">Gestión de Empleados</a>
     <a href="Asistencias.aspx">Gestión de Asistencias</a>
-    <a href="EstadosLaborales.aspx">Gestión de Estados Laborales</a>
     <a href="Evaluaciones.aspx">Gestión de Evaluaciones</a>
     <a href="Ausencias.aspx">Gestión de Ausencias</a>
     <a href="Gestiones.aspx">Gestión de Vacaciones</a>

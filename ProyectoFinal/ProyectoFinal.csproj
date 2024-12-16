@@ -215,7 +215,6 @@
     <Content Include="Pages\Asistencias.aspx" />
     <Content Include="Pages\Ausencias.aspx" />
     <Content Include="Pages\Empleado.aspx" />
-    <Content Include="Pages\EstadosLaborales.aspx" />
     <Content Include="Pages\Evaluaciones.aspx" />
     <Content Include="Pages\Gestiones.aspx" />
     <Content Include="Pages\Login.aspx" />
@@ -340,13 +339,6 @@
     </Compile>
     <Compile Include="Pages\Empleado.aspx.designer.cs">
       <DependentUpon>Empleado.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\EstadosLaborales.aspx.cs">
-      <DependentUpon>EstadosLaborales.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\EstadosLaborales.aspx.designer.cs">
-      <DependentUpon>EstadosLaborales.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Evaluaciones.aspx.cs">
       <DependentUpon>Evaluaciones.aspx</DependentUpon>
