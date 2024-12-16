@@ -59,7 +59,7 @@
         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos de la Evaluación</legend>
-            <label for="txtIDEvaluacion">ID Evaluación:</label>
+            <label for="txtIDEvaluacion">ID Evaluación: (Solo funciona para actualizar)</label>
             <asp:TextBox ID="txtIDEvaluacion" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />
@@ -70,7 +70,7 @@
             <label for="txtPuntuacion">Puntuación:</label>
             <asp:TextBox ID="txtPuntuacion" runat="server" TextMode="Number" /><br />
             <asp:Button ID="btnAgregar" Text="Agregar" OnClick="btnAgregar_Click" runat="server" />
-            <asp:Button ID="btnActualizar" Text="Actualizar" OnClick="btnActualizar_Click" runat="server" />
+            <asp:Button ID="btnActualizar" Text="Actualizar" OnClick="btnActualizar_Click" runat="server" /> 
         </fieldset>
 
         <!-- Botón para Eliminar -->

@@ -71,6 +71,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarAusencias();
+                Response.Write("<script>alert('Ausencia agregada exitosamente.');</script>");
             }
         }
 
@@ -89,6 +90,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarAusencias();
+                Response.Write("<script>alert('Ausencia actualizada exitosamente.');</script>");
             }
         }
 
@@ -105,6 +107,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarAusencias();
+                Response.Write("<script>alert('Ausencia eliminada exitosamente.');</script>");
             }
         }
 

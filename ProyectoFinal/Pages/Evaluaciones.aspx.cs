@@ -71,6 +71,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarEvaluaciones();
+                Response.Write("<script>alert('Evaluacion agregada exitosamente.');</script>");
             }
         }
 
@@ -89,6 +90,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarEvaluaciones();
+                Response.Write("<script>alert('Evaluacion actualizada exitosamente.');</script>");
             }
         }
 
@@ -105,6 +107,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarEvaluaciones();
+                Response.Write("<script>alert('Evaluacion eliminada exitosamente.');</script>");
             }
         }
 

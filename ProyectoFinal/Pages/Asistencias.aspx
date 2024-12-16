@@ -64,7 +64,7 @@
          <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos de Asistencia</legend>
-            <label for="txtIDAsistencia">ID:</label>
+            <label for="txtIDAsistencia">ID de Aistencia: (Solo funciona para actualizar)</label>
             <asp:TextBox ID="txtIDAsistencia" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />

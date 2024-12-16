@@ -61,7 +61,7 @@
         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos de la Ausencia</legend>
-            <label for="txtIDAusencia">ID Ausencia:</label>
+            <label for="txtIDAusencia">ID Ausencia: (Solo funciona para actualizar)</label>
             <asp:TextBox ID="txtIDAusencia" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />

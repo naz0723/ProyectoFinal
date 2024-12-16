@@ -287,7 +287,6 @@
     <Content Include="App_code\clLogin.cs" />
     <Content Include="App_code\DatabaseHelper.cs" />
     <Content Include="App_code\clEmpleado.cs" />
-    <Content Include="App_code\clEstadoLab.cs" />
     <Content Include="App_code\clControlHoras.cs" />
     <Content Include="App_code\clGestionAusencias.cs" />
     <Content Include="App_code\clReportePuntualidad.cs" />

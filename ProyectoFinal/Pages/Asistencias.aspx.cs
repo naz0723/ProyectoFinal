@@ -36,6 +36,7 @@ namespace ProyectoFinal.Pages
                 da.Fill(dt);
                 gvEmpleados.DataSource = dt;
                 gvEmpleados.DataBind();
+
             }
         }
 
@@ -73,6 +74,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarAsistencias();
+                Response.Write("<script>alert('Asistencia agregada exitosamente.');</script>");
             }
         }
 
@@ -92,6 +94,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarAsistencias();
+                Response.Write("<script>alert('Asistencia actualizada exitosamente.');</script>");
             }
         }
 
@@ -108,6 +111,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarAsistencias();
+                Response.Write("<script>alert('Asistencia eliminada exitosamente.');</script>");
             }
         }
 

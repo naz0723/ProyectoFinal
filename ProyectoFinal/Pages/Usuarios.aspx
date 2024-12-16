@@ -59,7 +59,7 @@
         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos del Usuario</legend>
-            <label for="txtIDUsuario">ID Usuario:</label>
+            <label for="txtIDUsuario">ID Usuario: (Solo funciona para actualizar)</label>
             <asp:TextBox ID="txtIDUsuario" runat="server" /><br />
             <label for="txtUsuario">Usuario:</label>
             <asp:TextBox ID="txtUsuario" runat="server" /><br />

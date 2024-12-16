@@ -71,6 +71,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarGestiones();
+                Response.Write("<script>alert('Gestion agregada exitosamente.');</script>");
             }
         }
 
@@ -89,6 +90,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarGestiones();
+                Response.Write("<script>alert('Gestion actualizada exitosamente.');</script>");
             }
         }
 
@@ -105,6 +107,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarGestiones();
+                Response.Write("<script>alert('Gestion eliminada exitosamente.');</script>");
             }
      
         }

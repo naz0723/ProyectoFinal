@@ -47,6 +47,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarUsuarios();
+                Response.Write("<script>alert('Usuario nuevo agregado exitosamente.');</script>");
             }
         }
 
@@ -65,6 +66,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarUsuarios();
+                Response.Write("<script>alert('Usuario actualizado exitosamente.');</script>");
             }
         }
 
@@ -81,6 +83,7 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarUsuarios();
+                Response.Write("<script>alert('Usuario eliminado exitosamente.');</script>");
             }
         }
     }

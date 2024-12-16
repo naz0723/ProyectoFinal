@@ -58,7 +58,7 @@
         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos de Gestión</legend>
-            <label for="txtIDGestion">ID Gestión:</label>
+            <label for="txtIDGestion">ID Gestión:  (Solo funciona para actualizar)</label>
             <asp:TextBox ID="txtIDGestion" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />

@@ -60,7 +60,7 @@
         <fieldset>
             <legend>Datos del Empleado</legend>
 
-             <label for="txtIDEmpleado">ID Empleado:</label>
+             <label for="txtIDEmpleado">ID Empleado: (Solo funciona para actualizar)</label>
 <asp:TextBox ID="txtIDEmpleado" runat="server"></asp:TextBox>
 <br />
             <label for="txtNombre">Nombre:</label>
