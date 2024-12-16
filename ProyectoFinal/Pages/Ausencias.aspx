@@ -43,7 +43,8 @@
         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos de la Ausencia</legend>
-          
+            <label for="txtIDAusencia">ID Ausencia:</label>
+            <asp:TextBox ID="txtIDAusencia" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />
             <label for="txtFechaInicio">Fecha Inicio:</label>

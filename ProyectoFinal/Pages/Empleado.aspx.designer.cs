@@ -105,13 +105,13 @@ namespace ProyectoFinal.Pages
         protected global::System.Web.UI.WebControls.TextBox txtSalario;
 
         /// <summary>
-        /// TextBox1 control.
+        /// txtFechaIngreso control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaIngreso;
 
         /// <summary>
         /// btnAgregar control.

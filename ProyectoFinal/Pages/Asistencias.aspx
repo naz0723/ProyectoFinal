@@ -42,9 +42,11 @@
     <form id="form1" runat="server">
         <h2>Gestión de Asistencias</h2>
 
-        <!-- Formulario para Agregar/Actualizar -->
+         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos de Asistencia</legend>
+            <label for="txtIDAsistencia">ID:</label>
+            <asp:TextBox ID="txtIDAsistencia" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />
             <label for="txtFecha">Fecha:</label>
@@ -68,9 +70,6 @@
             <asp:TextBox ID="txtEliminarIDAsistencia" runat="server" /><br />
             <asp:Button ID="btnEliminar" Text="Eliminar" OnClick="btnEliminar_Click" runat="server" />
         </fieldset>
-
-        <h3>Listado de Empleados</h3>
-<asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
 
         <!-- Listado de Asistencias -->
         <h3>Listado de Asistencias</h3>

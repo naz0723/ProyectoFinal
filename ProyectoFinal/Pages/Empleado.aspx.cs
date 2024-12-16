@@ -17,21 +17,7 @@ namespace ProyectoFinal.Pages
             }
         }
 
-        protected void btnAsistencias_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Asistencias.aspx");
-        }
-
-        protected void btnEstadosLaborales_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("EstadosLaborales.aspx");
-        }
-
-        protected void btnEvaluaciones_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Evaluaciones.aspx");
-        }
-
+  
         private void CargarEmpleados()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))

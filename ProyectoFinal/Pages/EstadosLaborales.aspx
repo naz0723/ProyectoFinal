@@ -44,6 +44,8 @@
         <!-- Formulario para Agregar/Actualizar -->
         <fieldset>
             <legend>Datos del Estado Laboral</legend>
+            <label for="txtIDEstado">ID Estado Laboral:</label>
+            <asp:TextBox ID="txtIDEstado" runat="server" /><br />
             <label for="txtIDEmpleado">ID Empleado:</label>
             <asp:TextBox ID="txtIDEmpleado" runat="server" /><br />
             <label for="txtEstado">Estado:</label>

@@ -81,7 +81,7 @@
             <asp:TextBox ID="txtSalario" runat="server" /><br />
 
                     <label for="txtFechaIngreso">Fecha de Ingreso:</label>
-<asp:TextBox ID="TextBox1" runat="server" TextMode="Date" /><br />
+<asp:TextBox ID="txtFechaIngreso" runat="server" TextMode="Date" /><br />
             <asp:Button ID="btnAgregar" Text="Agregar" OnClick="btnAgregar_Click" runat="server" />
             <asp:Button ID="btnActualizar" Text="Actualizar" OnClick="btnActualizar_Click" runat="server" />
         </fieldset>

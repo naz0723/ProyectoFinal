@@ -29,8 +29,6 @@ namespace ProyectoFinal.Pages
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                gvEmpleados.DataSource = dt;
-                gvEmpleados.DataBind();
             }
         }
 
@@ -63,7 +61,7 @@ namespace ProyectoFinal.Pages
                 cmd.Parameters.AddWithValue("@Fecha", DateTime.Parse(txtFecha.Text));
                 cmd.Parameters.AddWithValue("@Hora_Entrada", TimeSpan.Parse(txtHoraEntrada.Text));
                 cmd.Parameters.AddWithValue("@Hora_Salida", TimeSpan.Parse(txtHoraSalida.Text));
-                cmd.Parameters.AddWithValue("@Estado", ddlEstado.SelectedValue);
+                cmd.Parameters.AddWithValue("@Estado", txtEstado.Text);
                 cmd.Parameters.AddWithValue("@Observaciones", txtObservaciones.Text);
 
                 conn.Open();
