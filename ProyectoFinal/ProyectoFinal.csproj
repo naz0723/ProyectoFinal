@@ -121,14 +121,14 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Pages\ControlHoras.aspx" />
+    <Content Include="Pages\Asistencias.aspx" />
+    <Content Include="Pages\Ausencias.aspx" />
     <Content Include="Pages\Empleado.aspx" />
-    <Content Include="Pages\EstadoLab.aspx" />
-    <Content Include="Pages\EvaluacionDesempeno.aspx" />
-    <Content Include="Pages\GestionAusencias.aspx" />
-    <Content Include="Pages\GestionVacaciones.aspx" />
+    <Content Include="Pages\EstadosLaborales.aspx" />
+    <Content Include="Pages\Evaluaciones.aspx" />
+    <Content Include="Pages\Gestiones.aspx" />
     <Content Include="Pages\Login.aspx" />
-    <Content Include="Pages\ReportePuntualidad.aspx" />
+    <Content Include="Pages\Usuarios.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -228,12 +228,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ControlHoras.aspx.cs">
-      <DependentUpon>ControlHoras.aspx</DependentUpon>
+    <Compile Include="Pages\Asistencias.aspx.cs">
+      <DependentUpon>Asistencias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\ControlHoras.aspx.designer.cs">
-      <DependentUpon>ControlHoras.aspx</DependentUpon>
+    <Compile Include="Pages\Asistencias.aspx.designer.cs">
+      <DependentUpon>Asistencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ausencias.aspx.cs">
+      <DependentUpon>Ausencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ausencias.aspx.designer.cs">
+      <DependentUpon>Ausencias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Empleado.aspx.cs">
       <DependentUpon>Empleado.aspx</DependentUpon>
@@ -242,33 +249,26 @@
     <Compile Include="Pages\Empleado.aspx.designer.cs">
       <DependentUpon>Empleado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EstadoLab.aspx.cs">
-      <DependentUpon>EstadoLab.aspx</DependentUpon>
+    <Compile Include="Pages\EstadosLaborales.aspx.cs">
+      <DependentUpon>EstadosLaborales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\EstadoLab.aspx.designer.cs">
-      <DependentUpon>EstadoLab.aspx</DependentUpon>
+    <Compile Include="Pages\EstadosLaborales.aspx.designer.cs">
+      <DependentUpon>EstadosLaborales.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EvaluacionDesempeno.aspx.cs">
-      <DependentUpon>EvaluacionDesempeno.aspx</DependentUpon>
+    <Compile Include="Pages\Evaluaciones.aspx.cs">
+      <DependentUpon>Evaluaciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\EvaluacionDesempeno.aspx.designer.cs">
-      <DependentUpon>EvaluacionDesempeno.aspx</DependentUpon>
+    <Compile Include="Pages\Evaluaciones.aspx.designer.cs">
+      <DependentUpon>Evaluaciones.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\GestionAusencias.aspx.cs">
-      <DependentUpon>GestionAusencias.aspx</DependentUpon>
+    <Compile Include="Pages\Gestiones.aspx.cs">
+      <DependentUpon>Gestiones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\GestionAusencias.aspx.designer.cs">
-      <DependentUpon>GestionAusencias.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\GestionVacaciones.aspx.cs">
-      <DependentUpon>GestionVacaciones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\GestionVacaciones.aspx.designer.cs">
-      <DependentUpon>GestionVacaciones.aspx</DependentUpon>
+    <Compile Include="Pages\Gestiones.aspx.designer.cs">
+      <DependentUpon>Gestiones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -277,12 +277,12 @@
     <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ReportePuntualidad.aspx.cs">
-      <DependentUpon>ReportePuntualidad.aspx</DependentUpon>
+    <Compile Include="Pages\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\ReportePuntualidad.aspx.designer.cs">
-      <DependentUpon>ReportePuntualidad.aspx</DependentUpon>
+    <Compile Include="Pages\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

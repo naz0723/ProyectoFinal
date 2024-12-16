@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Web;
 
 namespace ProyectoFinal.App_code
 {

@@ -1,57 +1,106 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Empleado.aspx.cs" Inherits="ProyectoFinal.Pages.Empleado" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Empleado.aspx.cs" Inherits="ProyectoFinal.Pages.Empleados" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Gestión de Empleados</title>
-    <link type="text/css" rel="stylesheet" href="../Styles/Estilos.css" />
 </head>
 <body>
-    <form id="formEmpleados" runat="server">
-        <div class="container">
-            <h2>Gestión de Empleados</h2>
 
-            <!-- Formulario para gestionar empleados -->
-            <div class="form-section">
-                <label for="txtNombre">Nombre:</label>
-                <input type="text" id="txtNombre" runat="server" />
+        <div class="submenu">
+        <a href="Empleado.aspx">Gestión de Empleados</a>
+        <a href="Asistencias.aspx">Gestión de Asistencias</a>
+        <a href="EstadosLaborales.aspx">Gestión de Estados Laborales</a>
+        <a href="Evaluaciones.aspx">Gestión de Evaluaciones</a>
+        <a href="Ausencias.aspx">Gestión de Ausencias</a>
+        <a href="Gestiones.aspx">Gestión de Vacaciones</a>
+        <a href="Usuarios.aspx">Gestión de Usuarios</a>
+    </div>
 
-                <label for="txtDireccion">Dirección:</label>
-                <input type="text" id="txtDireccion" runat="server" />
+    <style>
+        .submenu {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .submenu a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .submenu a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
 
-                <label for="txtContacto">Contacto:</label>
-                <input type="text" id="txtContacto" runat="server" />
+    <form id="form1" runat="server">
+        <h2>Gestión de Empleados</h2>
 
-                <label for="txtFechaIngreso">Fecha de Ingreso:</label>
-                <input type="date" id="txtFechaIngreso" runat="server" />
+        <!-- Formulario para Agregar/Actualizar Empleados -->
+        <fieldset>
+            <legend>Datos del Empleado</legend>
+            <label for="txtNombre">Nombre:</label>
+            <asp:TextBox ID="txtNombre" runat="server" /><br />
+            <label for="txtApellido">Apellido:</label>
+            <asp:TextBox ID="txtApellido" runat="server" /><br />
 
-                <label for="txtCargo">Cargo:</label>
-                <input type="text" id="txtCargo" runat="server" />
+            <label for="txtFechaNacimiento">Fecha de Nacimiento:</label>
+<asp:TextBox ID="txtFechaNacimiento" runat="server" TextMode="Date" /><br />
 
-                <label for="txtDepartamento">Departamento:</label>
-                <input type="text" id="txtDepartamento" runat="server" />
 
-                <label for="txtSalario">Salario:</label>
-                <input type="number" id="txtSalario" runat="server" />
+            <label for="txtDireccion">Dirección:</label>
+            <asp:TextBox ID="txtDireccion" runat="server" /><br />
+            <label for="txtTelefono">Teléfono:</label>
+            <asp:TextBox ID="txtTelefono" runat="server" /><br />
+            <label for="txtEmail">Email:</label>
+            <asp:TextBox ID="txtEmail" runat="server" /><br />
+            <label for="ddlCargo">Cargo:</label>
+<asp:DropDownList ID="ddlCargo" runat="server">
+    <asp:ListItem Text="Gerente" Value="Gerente"></asp:ListItem>
+    <asp:ListItem Text="Analista" Value="Analista"></asp:ListItem>
+    <asp:ListItem Text="Desarrollador" Value="Desarrollador"></asp:ListItem>
+    <asp:ListItem Text="Soporte Técnico" Value="Soporte Técnico"></asp:ListItem>
+    <asp:ListItem Text="Marketing" Value="Marketing"></asp:ListItem>
+    <asp:ListItem Text="Ventas" Value="Ventas"></asp:ListItem>
+</asp:DropDownList><br />
 
-                <label for="txtAdicionadoPor">Añadido/Modificado por:</label>
-                <input type="text" id="txtAdicionadoPor" runat="server" />
+<label for="ddlDepartamento">Departamento:</label>
+<asp:DropDownList ID="ddlDepartamento" runat="server">
+    <asp:ListItem Text="Recursos Humanos" Value="Recursos Humanos"></asp:ListItem>
+    <asp:ListItem Text="Tecnología" Value="Tecnología"></asp:ListItem>
+    <asp:ListItem Text="Finanzas" Value="Finanzas"></asp:ListItem>
+    <asp:ListItem Text="Operaciones" Value="Operaciones"></asp:ListItem>
+    <asp:ListItem Text="Marketing" Value="Marketing"></asp:ListItem>
+    <asp:ListItem Text="Ventas" Value="Ventas"></asp:ListItem>
+</asp:DropDownList><br />
 
-                <label for="txtEmpleadoID">ID del Empleado (para actualizar/eliminar):</label>
-                <input type="text" id="txtEmpleadoID" runat="server" />
-            </div>
+            <label for="txtSalario">Salario:</label>
+            <asp:TextBox ID="txtSalario" runat="server" /><br />
 
-            <!-- Botones CRUD al final -->
-            <div class="form-section">
-                <asp:Button ID="btnAgregar" runat="server" Text="Agregar Empleado" OnClick="btnAgregar_Click" />
-                <asp:Button ID="btnActualizar" runat="server" Text="Actualizar Empleado" OnClick="btnActualizar_Click" />
-                <asp:Button ID="btnEliminar" runat="server" Text="Eliminar Empleado" OnClick="btnEliminar_Click" />
-                <asp:Button ID="btnPagEstadoLab" runat="server" Text="Gestionar Estado Laboral" OnClick="btnPagEstadoLab_Click" />
-            </div>
-        </div>
+                    <label for="txtFechaIngreso">Fecha de Ingreso:</label>
+<asp:TextBox ID="TextBox1" runat="server" TextMode="Date" /><br />
+            <asp:Button ID="btnAgregar" Text="Agregar" OnClick="btnAgregar_Click" runat="server" />
+            <asp:Button ID="btnActualizar" Text="Actualizar" OnClick="btnActualizar_Click" runat="server" />
+        </fieldset>
+
+        <!-- Botón para Eliminar -->
+        <fieldset>
+            <legend>Eliminar Empleado</legend>
+            <label for="txtEliminarID">ID Empleado:</label>
+            <asp:TextBox ID="txtEliminarID" runat="server" /><br />
+            <asp:Button ID="btnEliminar" Text="Eliminar" OnClick="btnEliminar_Click" runat="server" />
+        </fieldset>
+
+     
+
+        <!-- Listado de Empleados -->
+        <h3>Listado de Empleados</h3>
+        <asp:GridView ID="gvEmpleados" AutoGenerateColumns="true" runat="server" />
     </form>
 </body>
 </html>
+
 

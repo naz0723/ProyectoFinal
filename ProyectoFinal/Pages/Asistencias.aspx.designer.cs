@@ -11,62 +11,71 @@ namespace ProyectoFinal.Pages
 {
 
 
-    public partial class GestionVacaciones
+    public partial class Asistencias
     {
 
         /// <summary>
-        /// formGestionVacaciones control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formGestionVacaciones;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtEmpleadoID control.
+        /// txtIDEmpleado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtEmpleadoID;
+        protected global::System.Web.UI.WebControls.TextBox txtIDEmpleado;
 
         /// <summary>
-        /// txtFechaInicio control.
+        /// txtFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaInicio;
+        protected global::System.Web.UI.WebControls.TextBox txtFecha;
 
         /// <summary>
-        /// txtFechaFin control.
+        /// txtHoraEntrada control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaFin;
+        protected global::System.Web.UI.WebControls.TextBox txtHoraEntrada;
 
         /// <summary>
-        /// ddlTipo control.
+        /// txtHoraSalida control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect ddlTipo;
+        protected global::System.Web.UI.WebControls.TextBox txtHoraSalida;
 
         /// <summary>
-        /// txtMotivo control.
+        /// txtEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtMotivo;
+        protected global::System.Web.UI.WebControls.TextBox txtEstado;
+
+        /// <summary>
+        /// txtObservaciones control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtObservaciones;
 
         /// <summary>
         /// btnAgregar control.
@@ -78,51 +87,6 @@ namespace ProyectoFinal.Pages
         protected global::System.Web.UI.WebControls.Button btnAgregar;
 
         /// <summary>
-        /// txtGestionIDActualizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtGestionIDActualizar;
-
-        /// <summary>
-        /// txtFechaInicioActualizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaInicioActualizar;
-
-        /// <summary>
-        /// txtFechaFinActualizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtFechaFinActualizar;
-
-        /// <summary>
-        /// ddlTipoActualizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect ddlTipoActualizar;
-
-        /// <summary>
-        /// txtMotivoActualizar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtMotivoActualizar;
-
-        /// <summary>
         /// btnActualizar control.
         /// </summary>
         /// <remarks>
@@ -132,13 +96,13 @@ namespace ProyectoFinal.Pages
         protected global::System.Web.UI.WebControls.Button btnActualizar;
 
         /// <summary>
-        /// txtGestionIDEliminar control.
+        /// txtEliminarIDAsistencia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtGestionIDEliminar;
+        protected global::System.Web.UI.WebControls.TextBox txtEliminarIDAsistencia;
 
         /// <summary>
         /// btnEliminar control.
@@ -148,5 +112,23 @@ namespace ProyectoFinal.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEliminar;
+
+        /// <summary>
+        /// gvEmpleados control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvEmpleados;
+
+        /// <summary>
+        /// gvAsistencias control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvAsistencias;
     }
 }
