@@ -99,20 +99,25 @@ namespace ProyectoFinal.Pages
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-               
+
+                cmd.Parameters.AddWithValue("@ID_Empleado", int.Parse(txtIDEmpleado.Text));
                 cmd.Parameters.AddWithValue("@Nombre", txtNombre.Text);
                 cmd.Parameters.AddWithValue("@Apellido", txtApellido.Text);
                 cmd.Parameters.AddWithValue("@Direccion", txtDireccion.Text);
                 cmd.Parameters.AddWithValue("@Telefono", txtTelefono.Text);
                 cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@Fecha_Ingreso", DateTime.Now);
-               
+                cmd.Parameters.AddWithValue("@Cargo", ddlCargo.SelectedValue);
+                cmd.Parameters.AddWithValue("@Departamento", ddlDepartamento.SelectedValue);
                 cmd.Parameters.AddWithValue("@Salario", decimal.Parse(txtSalario.Text));
                 cmd.Parameters.AddWithValue("@Estado", "Activo");
+                cmd.Parameters.AddWithValue("@Fecha_Nacimiento", DateTime.Parse(txtFechaNacimiento.Text));
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarEmpleados();
+
+                Response.Write("<script>alert('Empleado actualizado exitosamente.');</script>");
             }
         }
 
@@ -166,6 +171,8 @@ namespace ProyectoFinal.Pages
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 CargarEmpleados();
+
+                Response.Write("<script>alert('Empleado Eliminado exitosamente.');</script>");
             }
         }
 

@@ -59,6 +59,10 @@
         <!-- Formulario para Agregar/Actualizar Empleados -->
         <fieldset>
             <legend>Datos del Empleado</legend>
+
+             <label for="txtIDEmpleado">ID Empleado:</label>
+<asp:TextBox ID="txtIDEmpleado" runat="server"></asp:TextBox>
+<br />
             <label for="txtNombre">Nombre:</label>
             <asp:TextBox ID="txtNombre" runat="server" /><br />
             <label for="txtApellido">Apellido:</label>
